@@ -7,8 +7,6 @@ export default function(state = [], action) {
       return action.payload;
     case FETCH_POST:
       return [action.payload];
-    case POST_CREATED:
-      return state;
     default:
       return state;
   }
