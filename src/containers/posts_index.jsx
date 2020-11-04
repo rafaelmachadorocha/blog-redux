@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 import { fetchPosts } from '../actions';
 
-class PostIndex extends Component {
+class PostsIndex extends Component {
 
   componentDidMount() {
     this.props.fetchPosts();
@@ -51,4 +51,4 @@ function mapDispatchToProps(dispatch) {
   }, dispatch);
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(PostIndex);
+export default connect(mapStateToProps, mapDispatchToProps)(PostsIndex);
