@@ -11,7 +11,6 @@ class PostsIndex extends Component {
   }
 
   renderPosts() {
-    console.log(this.props.posts)
     return this.props.posts.map((post) => {
       return (
         <Link to={`/posts/${post.id}`} key={post.id}>
